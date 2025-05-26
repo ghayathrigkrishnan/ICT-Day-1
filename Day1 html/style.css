@@ -1,0 +1,26 @@
+h4{
+    color: rgb(0, 255, 255);
+    text-align: center;
+}
+#NAME{
+    color: yellow;
+    text-align: left;
+}
+.box{
+    border: 2px solid red;
+    margin: 23px;
+    margin-left: 30%;
+    margin-right: 25%;
+    padding: 2%;
+    background-color: bisque;
+}
+button{
+    color: red;
+}
+.tb{
+    margin-left: 41%;
+    border-collapse: collapse;
+}
+#table{
+    text-align: center;
+}
