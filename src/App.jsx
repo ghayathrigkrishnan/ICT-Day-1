@@ -2,29 +2,35 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import First from './components/First'
-import Reg from './components/Reg'
-import DataTable from './components/DataTable'
-import DataCard from './components/DataCard'
-import Navbar from './components/Navbar'
+import StateBasics from './components/StateBasics'
+import Example from './components/Example'
+import Counter from './components/Counter'
+import TextInput from './components/TextInput'
+import DataForm from './components/DataForm'
 import { Route, Routes } from 'react-router-dom'
+import NavBar from './components/NavBar'
+import DataFetch from './components/DataFetch'
+import DataCard from './components/DataCard'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Welcome To REACT</h1>
-      {/* <First/> */}
-      { /*<Reg/> */}
-      {/*<DataTable/>*/}
-     {/*<DataCard/>*/}
-      <Navbar/>
+      {/*<StateBasics/>*/}
+      {/*<Example/>*/}
+      {/*<Counter/>*/}
+      {/*<TextInput/>*/}
+      {/*<DataForm/>*/}
+       <NavBar/>
       <Routes>
-        <Route path='/' element={<First/>}/>
-        <Route path='/r' element={<Reg/>}/>
-        <Route path='/t' element={<DataTable/>}/>
-        <Route path='/c' element={<DataCard/>}/>
+        <Route path='/' element={<StateBasics/>}/>
+        <Route path='/e' element={<Example/>}/>
+        <Route path='/c' element={<Counter/>}/>
+        <Route path='/t' element={<TextInput/>}/>
+        <Route path='/d' element={<DataForm/>}/>
+        <Route path='/f' element={<DataFetch/>}/>
+        <Route path='/a' element={<DataCard/>}/>
       </Routes>
     </>
   )
